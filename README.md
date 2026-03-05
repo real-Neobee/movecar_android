@@ -2,13 +2,13 @@
 
 基于 Cloudflare Workers 的智能挪车通知系统，扫码即可通知车主，保护双方隐私。
 
-> 本版本基于 [lesnolie/movecar](https://github.com/lesnolie/movecar) 原项目进行优化调整，核心架构不变，仅对国内安卓用户使用体验和交互逻辑进行了多项改进。
+> 本版基于 [原项目](https://github.com/lesnolie/movecar) 进行优化调整，核心架构不变，仅对国内安卓用户使用体验和交互逻辑进行了多项改进，并更新部署教程。
 
 ## 界面预览
 
 |                        路人页面                         |                         车主页面                         |
 | :-------------------------------------------------------: | :------------------------------------------------------: |
-| [🔗 在线预览](https://movecar.octobro.xyz/sender_preview) | [🔗 在线预览](https://movecar.octobro.xyz/owner_preview) |
+| [🔗 在线预览](https://preview.movecar.neobee.org/sender_preview) | [🔗 在线预览](https://preview.movecar.neobee.org/owner_preview) |
 
 ## 与原版的主要区别
 
@@ -46,8 +46,6 @@
 - 模板字符串加入 `/*html*/` 标记，VS Code 可对内嵌 HTML 完整高亮
 
 ## 部署步骤
-
-在 [原项目](https://github.com/lesnolie/movecar) 的部署教程的基础上略作修改，包括修改Cloudflare Worker创建流程（界面文字有所更改）和配置环境变量等。
 
 ### 第一步：注册 Cloudflare 账号
 
@@ -93,8 +91,6 @@ _!!! 请先前往 [sct.ftqq.com](https://sct.ftqq.com) 微信扫码登录获取 
 3. 输入你的域名，按提示完成 DNS 配置
 
 > 获得免费域名或购买域名等方法自行查找
->
-> - [ ] 搭建博客后或上传指南
 
 #### 使用WAF规则防护（建议，防止境外恶意攻击）
 
